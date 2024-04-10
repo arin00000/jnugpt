@@ -5,17 +5,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chat Interface</title>
-<link rel="stylesheet" href="chat.css">
+<link rel="stylesheet" href="css/chat.css">
 </head>
 <body>
+	
 <div class="chat-app">
     <header class="chat-header">
-        <div class="status-bar">
-            <span>과거 채팅 이력</span>
-            <span>뒤로가기</span>
+    <div class="header-content">
+        <span class="history">
+		<img src="image/history.png" alt="history" />
+		</span>
+        <div class="chat-title">
+            <img src="image/logo.png" alt="LOGO" />
         </div>
-        <div class="chat-title">LOGO&nbsp;</div>
-    </header>
+        <span class="back">
+		<img src="image/back.png" alt="back" />
+		</span>
+    </div>
+</header>
+
     <div class="chat-messages">
         <div class="date">4월 8일 월요일</div>
         <div class="message received">
@@ -23,14 +31,15 @@
             <div class="text">안녕 궁금한 내용이 있어?</div>
             <div class="time_recive">21:27</div>
         </div>
-        <div class="message sent">
+        <div class="message send">
             <div class="text">오늘 햇들마루 학식을 알려줘</div>
             <div class="time_send">21:27</div>
         </div>
     </div>
     <div class="chat-input">
-        <input type="text" placeholder="Write a message...">
-    </div>
+    <input type="text" id="message-input" placeholder="메시지를 입력하세요...">
+    <button id="send-button" class="chat-input-send-button">보내기</button>
+</div>
 </div>
 </body>
 </html>
